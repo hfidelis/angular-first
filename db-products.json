@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Produto 1",
+      "descricao": "Descrição exemplo 1",
+      "foto": "card-item.png",
+      "preco": 100
+    },
+    {
+      "id": 2,
+      "produto": "Produto 2",
+      "descricao": "Descrição exemplo 2",
+      "foto": "card-item.png",
+      "preco": 200
+    },
+    {
+      "id": "3",
+      "produto": "Produto 3",
+      "descricao": "Descrição exemplo 3",
+      "foto": "card-item.png",
+      "preco": "300"
+    },
+    {
+      "id": "4",
+      "produto": "Produto 4",
+      "descricao": "Descrição exemplo 4",
+      "foto": "card-item.png",
+      "preco": "400"
+    },
+    {
+      "id": "NyyxB-G",
+      "produto": "Produto 5",
+      "descricao": "Descrição produto 5",
+      "foto": "card-item.png",
+      "preco": 500
+    },
+    {
+      "id": "Z9YlxC_",
+      "produto": "Produto 6",
+      "descricao": "Descrição Produto 6",
+      "foto": "card-item.png",
+      "preco": 600
+    }
+  ]
+}

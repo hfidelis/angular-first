@@ -45,121 +45,16 @@
     </div>
 
     <mat-grid-list cols="4">
-        <mat-grid-tile>
+        <mat-grid-tile *ngFor="let produto of produtos">
             <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
+                <img mat-card-image src="../../assets/img/{{produto.foto}}" alt="Product Sample">
                 <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
+                  <h1 class="card-title">{{produto.produto}}</h1>
                 </mat-card-header>
                 <mat-card-content>
-                  <p>Descrição do Produto</p>
+                  <p>{{produto.descricao}}</p>
                 </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
-                <mat-card-actions>
-                  <button mat-button>Comprar</button>
-                </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <mat-card class="example-card">
-                <img mat-card-image src="../../assets/img/card-item.png" alt="Product Sample">
-                <mat-card-header>
-                  <h1 class="card-title">Produto</h1>
-                </mat-card-header>
-                <mat-card-content>
-                  <p>Descrição do Produto</p>
-                </mat-card-content>
-                <h3>R$ 100,00</h3>
+                <h3>{{produto.preco | currency : 'BRL'}}</h3>
                 <mat-card-actions>
                   <button mat-button>Comprar</button>
                 </mat-card-actions>
